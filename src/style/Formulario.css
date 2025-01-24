@@ -1,0 +1,143 @@
+.formulario-container-mayor{
+    background: #333333;
+    padding: 50px;
+}
+
+.formulario-container {
+    color: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.formulario-titulo {
+    color: #ffcc00;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.6s ease, transform 2s ease;
+}
+
+.formulario-titulo.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-nombre {
+    padding: 10px;
+    border: 1px solid #ffcc00 ;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.6s ease, transform 2s ease;
+}
+
+.formulario-nombre:nth-child(odd).visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.formulario-nombre:nth-child(even).visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.formulario-check {
+    width: auto;
+    margin-right: 10px;
+}
+
+.formulario-checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 0.9rem;
+}
+
+a {
+    color: #00cc66;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.formulario-boton {
+    background-color: #ffcc00;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 2s ease;
+}
+
+.formulario-boton.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.formulario-boton:hover {
+    background-color: #e6b800;
+}
+
+.error {
+    color: #ff3333;
+    font-size: 0.9rem;
+}
+
+.mensaje {
+    color: #00cc66;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+@media (max-width: 600px){
+    .formulario-container-mayor {
+        padding: 40px;
+    }
+
+    .formulario-titulo{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 500px){
+    .formulario-container-mayor {
+        padding: 30px;
+    }
+
+    .formulario-titulo{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 400px){
+    .formulario-container-mayor {
+        padding: 20px;
+    }
+
+    .formulario-titulo{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}

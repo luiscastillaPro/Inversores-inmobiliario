@@ -1,0 +1,121 @@
+.alumnos-contenedor-titulo{
+    text-align: center;
+    margin: 0 0 80px;
+}
+
+.alumnos-titulo{
+    font-family: "Roboto", Sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(50px); 
+    transition: opacity 0.8s ease, transform 2s ease;
+}
+
+.alumnos-titulo.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.alumnos-seccion{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 70px;
+}
+
+.alumnos-años{
+    width: 300px;
+    height: 300px;
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column; 
+}
+
+.alumnos-numero{
+    font-size: 100px;
+    font-weight: 300;
+    font-family: "Roboto", Sans-serif;
+}
+
+.alumno-texto{
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@media (max-width: 1000px) {
+    .alumnos-seccion {
+        margin: 0 20px 70px;
+        gap: 15px; 
+    }
+
+    .alumnos-años {
+        width: 250px;
+        height: 250px; 
+    }
+
+    .alumnos-numero {
+        font-size: 80px;
+    }
+
+    .alumno-texto {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .alumnos-años {
+        width: 200px;
+        height: 200px; 
+    }
+
+    .alumnos-seccion{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .alumnos-años {
+        width: 170px;
+        height: 170px; 
+    }
+}
+
+@media (max-width: 550px) {
+    .alumnos-seccion {
+        flex-direction: column; 
+        align-items: center;
+        margin: 0 auto;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .alumnos-años {
+        width: 90%; 
+        max-width: 300px; 
+        height: 250px; 
+        padding: 20px; 
+    }
+
+    .alumnos-numero {
+        font-size: 60px; 
+    }
+
+    .alumno-texto {
+        font-size: 14px; 
+    }
+
+    .alumnos-contenedor-titulo {
+        margin: 0 0 50px;
+        padding: 0 15px; 
+    }
+
+    .alumnos-titulo {
+        font-size: 18px; 
+    }
+}

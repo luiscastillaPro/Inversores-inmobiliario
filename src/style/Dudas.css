@@ -1,0 +1,131 @@
+.dudas-container{
+    padding: 40px;
+}
+
+.dudas-titulo{
+    font-family: "Montserrat", Sans-serif;
+    font-size: 37px;
+    font-weight: 800;
+    letter-spacing: 2.6px;
+    text-align: center;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.dudas-titulo.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dudas-contin{
+    background: #dfdfdf;
+    padding: 60px 60px 80px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.dudas-separador{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.dudas-separador.left {
+    transform: translateX(-100px);
+}
+
+.dudas-separador.right {
+    transform: translateX(100px); 
+}
+
+.dudas-separador.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.dudas-icono {
+    font-size: 24px;
+    color: #000000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #f3f3f3;
+    border-radius: 50%;
+}
+
+.dudas-preguntas{
+    font-family: "Roboto", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.dudas-textico{
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width: 700px) {
+    .dudas-container{
+        padding: 30px;
+    }
+
+    .dudas-titulo{
+        margin-bottom: 30px;
+    }
+
+    .dudas-contin{
+        padding:  40px 40px 60px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .dudas-titulo{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+    .dudas-titulo{
+        font-size: 25px;
+    }
+
+    .dudas-container{
+        padding: 20px;
+    }
+
+    .dudas-contin{
+        padding: 20px;
+    }
+
+    .dudas-textico{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .dudas-container{
+        padding: 10px;
+    }
+
+    .dudas-contin{
+        padding: 10px;
+    }
+
+    .dudas-preguntas{
+        font-size: 18px;
+    }
+
+    .dudas-titulo{
+        margin-bottom: 10px;
+    }
+}
